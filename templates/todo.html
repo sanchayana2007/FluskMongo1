@@ -1,0 +1,18 @@
+<h1>ToDo Lists </h1>
+
+<body>
+
+<form action='/new' method='POST'>
+<input type='text'name ='name'> </input>
+<input type='text'name ='descp'> </input>
+<input type='submit'value='Submit'> </input>
+</form>
+
+
+
+{% for i in item %}
+
+<h1>{{i.name}}</h1>
+<p>{{i.description}}</p>
+{% endfor %}
+ </body>
