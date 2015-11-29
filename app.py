@@ -16,7 +16,7 @@ def todo():
 def new():
     print('We have reachd')
     item_doc = {
-        'name': request.form['answer'],
+        'name': request.form['name'],
         'Description' : request.form['descp']
     }
     db.tododb.insert_one(item_doc)
