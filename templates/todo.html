@@ -1,18 +1,22 @@
-<h1>ToDo Lists </h1>
-
-<body>
-
-<form action='/new' method='POST'>
-<input type='text'name ='name'> </input>
-<input type='text'name ='descp'> </input>
-<input type='submit'value='Submit'> </input>
-</form>
-
-
-
-{% for i in item %}
-
-<h1>{{i.name}}</h1>
-<p>{{i.Description}}</p>
-{% endfor %}
- </body>
+<!doctyepe html>
+<html lang="en" ng-app>
+    <head>
+        <meta charset="utf-8">
+        <title>ToDo Lists</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js">
+        </script>
+    </head>
+    <date-picker>test</date-picker>
+    <div class="date-picker"></div>
+    <body ng-init=" PostNo =10 ">
+        <form action='/new' method='POST'>
+            <input type='text' name='name'></input>
+            <input type='text' name='descp'></input>
+            <input type='submit' value='Submit'></input>
+        </form>{% for i in item %}
+        <p>Posts {{PostNo}}</p>
+        
+            <h1>{{i.name}}</h1>
+            <p>{{i.Description}}</p>{% endfor %}
+    </body>
+</html>

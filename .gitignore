@@ -1,3 +1,4 @@
 *.name
 .idea/FluskMongo1.iml
 *.xml
+templates/.zedstate
